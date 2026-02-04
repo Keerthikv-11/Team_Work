@@ -5,8 +5,6 @@ import { Home} from './pages/Home'
 import { Techstack} from './pages/Techstack'
 import { Contact} from './pages/Contact'
 
-
-
 import './App.css'
 import { RouterProvider , createBrowserRouter } from 'react-router-dom'
 
@@ -22,7 +20,9 @@ const routes = createBrowserRouter([
   {
    path :"*" , element :<h1>404 PAge not found</h1> 
   }
-]
+],{
+  basename:"/Team_Work"
+}
 )
 
   return (
