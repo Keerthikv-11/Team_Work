@@ -1,0 +1,84 @@
+.contact-page {
+  min-height: 85vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  line-height: 1.1;
+  margin: 30px 0;
+  color: #1a1a1a;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #b833e1, #f08c33);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-sub {
+  color: #666;
+  max-width: 600px;
+  margin:20px auto ;
+  font-size: 17px;
+}
+
+
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  border-color: #b833e1;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.contact-card h3 {
+  font-size: 0.9rem;
+  color: #888;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.contact-link {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.contact-link:hover {
+  color: #b833e1;
+}
+
+
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 80px 20px;
+  }
+  .contact-title{
+    font-size: 40px;
+  }
+  .contact-methods {
+    grid-template-columns: 1fr;
+  }
+}

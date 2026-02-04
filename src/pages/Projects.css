@@ -1,0 +1,115 @@
+.projects-section {
+  padding: 10px 8%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-header {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.section-subtitle {
+  color: #666;
+  font-size: 17px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.project-card {
+  background: #ffffff;
+  border: 1px solid #000;
+  border-radius: 20px;
+  transition: all 0.3s ;
+  display: flex;
+  flex-direction: column;
+  
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: #b833e1;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.project-content {
+  padding: 35px;
+}
+
+.project-title {
+  font-size: 25px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.project-problem {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  height: 130px; 
+  overflow: hidden;
+}
+
+.project-tech-tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.project-tech-tags span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #b833e1;
+  background: #fdf2ff;
+  padding: 4px 12px;
+  border-radius: 50px;
+}
+
+.github-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.github-link span {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.github-link:hover {
+  color: #b833e1;
+  border-bottom: 2px solid #b833e1;
+}
+
+.github-link:hover span {
+  transform: translate(3px, -3px);
+}
+
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 60px 20px;
+  }
+  .section-title {
+    font-size: 35px;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr; 
+  }
+}
