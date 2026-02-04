@@ -13,21 +13,11 @@ import { RouterProvider , createBrowserRouter } from 'react-router-dom'
 
 
 function App() {
-const routes = createBrowserRouter([
-  { path :"/" , element: <Home />},
-  { path :"/AboutMe" , element: <Aboutme/>},
-  { path : "/Techstack" , element : <Techstack />},
-  { path :"/Projects" , element : <Projects/>},
-  { path :"/contact" , element : < Contact/>},
-  {
-    basename : "/Team_Work"
-  }
-]
-)
+
 
   return (
     <>
-    
+    <h1>Hello</h1>
       <RouterProvider router={routes}>
       
       </RouterProvider>
