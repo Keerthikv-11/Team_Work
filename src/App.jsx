@@ -18,7 +18,10 @@ const routes = createBrowserRouter([
   { path :"/AboutMe" , element: <Aboutme/>},
   { path : "/Techstack" , element : <Techstack />},
   { path :"/Projects" , element : <Projects/>},
-  { path :"/contact" , element : < Contact/>}
+  { path :"/contact" , element : < Contact/>},
+  {
+    basename : "/Team_Work"
+  }
 ]
 )
 
